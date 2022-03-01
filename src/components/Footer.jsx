@@ -1,4 +1,4 @@
-import diagonalArrow from "../assets/diagonalArrow.svg";
+import diagonalArrow from "../assets/imgs/diagonalArrow.svg";
 
 const Footer = () => {
   return (

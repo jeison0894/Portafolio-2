@@ -2,21 +2,18 @@ import CopyHome from "./CopyHome";
 
 const Main = () => {
   return (
-    <main className="grid grid-cols-2 h-[68vh] mb-10">
+    <main className="grid grid-cols-2 h-[68vh]">
       <nav>
-        <ul className="space-y-2">
+        <ul className="space-y-2 font-semibold text-gray-400 ">
           <li>
-            <a href="#">Inicio</a>
+            <a href="#" className="text-white ">Inicio</a>
           </li>
           <li>
-            <a href="#">Proyectos</a>
+            <a href="#" className="hover:text-gray-300">Proyectos</a>
           </li>
           <li>
-            <a href="#">Sobre mi</a>
-          </li>
-          <li>
-            <a href="#">Contacto</a>
-          </li>
+            <a href="#" className="hover:text-gray-300">Sobre mi</a>
+          </li>         
         </ul>
       </nav>
 
