@@ -1,23 +1,44 @@
-import CopyHome from "./CopyHome";
+import {  NavLink, Outlet } from "react-router-dom";
 
 const Main = () => {
   return (
-    <main className="grid grid-cols-2 h-[68vh]">
+    <main className="flex flex-col justify-between sm:grid sm:grid-cols-2 h-[60vh]">
       <nav>
         <ul className="space-y-2 font-semibold text-gray-400 ">
           <li>
-            <a href="#" className="text-white ">Inicio</a>
+            <NavLink
+              to="/"
+              className={({ isActive }) =>
+                isActive ? "text-white" : "text-gray-400 "
+              }
+            >
+              Inicio
+            </NavLink>
           </li>
           <li>
-            <a href="#" className="hover:text-gray-300">Proyectos</a>
+            <NavLink
+              to="/proyectos"
+              className={({ isActive }) =>
+                isActive ? "text-white" : "text-gray-400 "
+              }
+            >
+              Proyectos
+            </NavLink>
           </li>
           <li>
-            <a href="#" className="hover:text-gray-300">Sobre mi</a>
-          </li>         
+            <NavLink
+              to="/sobreMi"
+              className={({ isActive }) =>
+                isActive ? "text-white" : "text-gray-400 "
+              }
+            >
+              Sobre mi
+            </NavLink>
+          </li>
         </ul>
       </nav>
 
-      <CopyHome />
+      <Outlet />
     </main>
   );
 };
