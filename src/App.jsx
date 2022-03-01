@@ -19,7 +19,7 @@ const App = () => {
           <Route path="/sobreMi" element={<About />} />
         </Route>
       </Routes>
-     {/*  <Footer/> */}
+      <Footer/>
     </Router>
   );
 };

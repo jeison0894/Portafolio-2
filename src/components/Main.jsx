@@ -9,7 +9,7 @@ const Main = () => {
             <NavLink
               to="/"
               className={({ isActive }) =>
-                isActive ? "text-white" : "text-gray-400 "
+                isActive ? "text-white" : "text-gray-400 hover:text-gray-500  "
               }
             >
               Inicio
@@ -19,7 +19,7 @@ const Main = () => {
             <NavLink
               to="/proyectos"
               className={({ isActive }) =>
-                isActive ? "text-white" : "text-gray-400 "
+                isActive ? "text-white " : "text-gray-400 hover:text-gray-500 "
               }
             >
               Proyectos
@@ -29,15 +29,17 @@ const Main = () => {
             <NavLink
               to="/sobreMi"
               className={({ isActive }) =>
-                isActive ? "text-white" : "text-gray-400 "
+                isActive ? "text-white" : "text-gray-400 hover:text-gray-500  "
               }
             >
               Sobre mi
             </NavLink>
           </li>
+
+          
         </ul>
       </nav>
-      <div className="border-white col-span-2">
+      <div className=" col-span-2">
         <Outlet />
       </div>
     </main>
