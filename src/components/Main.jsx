@@ -1,8 +1,8 @@
-import {  NavLink, Outlet } from "react-router-dom";
+import { NavLink, Outlet } from "react-router-dom";
 
 const Main = () => {
   return (
-    <main className="flex flex-col justify-between sm:grid sm:grid-cols-2 h-[60vh]">
+    <main className="flex flex-col justify-between sm:grid sm:grid-cols-3 h-full sm:h-[60vh]">
       <nav>
         <ul className="space-y-2 font-semibold text-gray-400 ">
           <li>
@@ -37,8 +37,9 @@ const Main = () => {
           </li>
         </ul>
       </nav>
-
-      <Outlet />
+      <div className="border-white col-span-2">
+        <Outlet />
+      </div>
     </main>
   );
 };

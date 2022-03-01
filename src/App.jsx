@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import CopyHome from "./components/CopyHome";
 import Projects from "./components/Projects";
 import About from "./components/About";
+import Footer from "./components/Footer";
 
 const App = () => {
   return (
@@ -18,6 +19,7 @@ const App = () => {
           <Route path="/sobreMi" element={<About />} />
         </Route>
       </Routes>
+     {/*  <Footer/> */}
     </Router>
   );
 };
