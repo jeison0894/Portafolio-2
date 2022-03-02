@@ -1,8 +1,13 @@
-import { NavLink, Outlet } from "react-router-dom";
+import { NavLink, Outlet, useLocation } from "react-router-dom";
+import { CSSTransition, TransitionGroup, } from 'react-transition-group';
+import "../index.css"
 
 const Main = () => {
   return (
+
+
     <main className="flex flex-col justify-between sm:grid sm:grid-cols-3 h-full sm:h-[60vh]">
+
       <nav>
         <ul className="space-y-2 font-semibold text-gray-400 ">
           <li>
@@ -36,13 +41,18 @@ const Main = () => {
             </NavLink>
           </li>
 
-          
+
         </ul>
       </nav>
-      <div className=" col-span-2">
-        <Outlet />
-      </div>
+      <TransitionGroup component={null} enter={true} exit={false}>
+        <CSSTransition key={useLocation().pathname} timeout={500} classNames="fade" >
+          <div className=" col-span-2">
+            <Outlet />
+          </div>
+        </CSSTransition>
+      </TransitionGroup>
     </main>
+
   );
 };
 
