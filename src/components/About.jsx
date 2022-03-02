@@ -5,13 +5,13 @@ const About = () => {
         <nav className="flex justify-end my-8 mb-12 sm:absolute sm:bottom-0">
           <ul className="space-y-1  ">
             <li>
-              <a href="#" className="hover:text-gray-300">GitHub &nbsp; ↗</a>
+              <a href="https://github.com/jeison0894" target="_blank" rel="noreferrer" className="hover:text-gray-300">GitHub &nbsp; ↗</a>
             </li>
             <li>
-              <a href="#" className="hover:text-gray-300">Dribble &nbsp; ↗</a>
+              <a href="https://dribbble.com/JasonGarzon" target="_blank" rel="noreferrer" className="hover:text-gray-300">Dribble &nbsp; ↗</a>
             </li>
             <li>
-              <a href="#" className="hover:text-gray-300">Linkedin &nbsp; ↗</a>
+              <a href="https://www.linkedin.com/in/jeison-alexander-garzon-pe%C3%B1a/" target="_blank" rel="noreferrer" className="hover:text-gray-300">Linkedin &nbsp; ↗</a>
             </li>
           </ul>
         </nav>
