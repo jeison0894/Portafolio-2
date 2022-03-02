@@ -3,14 +3,23 @@ import project2 from "../assets/imgs/project2.jpg"
 
 const Projects = () => {
 
+  const handleZoomOut = (e) => {
+    const imageZoomOut = e.target.nextElementSibling.firstChild
+    imageZoomOut.classList.add("scale-125")
+  }
 
+  const handleZoomIn = (e) => {
+    const imageZoomIn = e.target.nextElementSibling.firstChild
+    imageZoomIn.classList.remove("scale-125")
+  }
 
   return (
-    <section className="mt-14 mb-8 space-y-8 sm:mt-0">
+    <section className="mt-14 mb-24 space-y-8 sm:mt-0">
 
-      <article className="flex flex-wrap lg:flex-nowrap cursor-pointer ">
-        <div className=" w-full h-full lg:max-w-sm relative overflow-hidden">
-          <img className="object-cover hover:scale-125 ease-out duration-500" src={project2} alt="Sitio web commerce" />
+      <article onMouseEnter={handleZoomOut} onMouseLeave={handleZoomIn} className="flex flex-wrap lg:flex-nowrap cursor-pointer relative ">
+        <div className="w-full h-full absolute  z-40"></div>
+        <div className=" w-full h-full lg:max-w-sm  overflow-hidden">
+          <img className="object-cover ease-out duration-700" src={project2} alt="Sitio web commerce" />
         </div>
 
         <div className="w-full flex flex-col justify-between py-5 lg:pb-0 border-gray-500/70 border-b-[0.5px] lg:ml-6 lg:p-4  lg:border-b-[0] lg:border-t-[0.5px]">
@@ -28,11 +37,10 @@ const Projects = () => {
         </div>
       </article>
 
-      <article className="flex flex-wrap lg:flex-nowrap cursor-pointer">
-
-
-        <div className=" w-full h-full lg:max-w-sm relative overflow-hidden">
-          <img className="object-cover hover:scale-125 ease-out duration-500" src={project1} alt="Twitter Clon" />
+       <article onMouseEnter={handleZoomOut} onMouseLeave={handleZoomIn} className="flex flex-wrap lg:flex-nowrap cursor-pointer relative">
+        <div className="w-full h-full absolute z-40"></div>
+        <div className=" w-full h-full lg:max-w-sm  overflow-hidden">
+          <img className="object-cover hover:scale-125 ease-out duration-700" src={project1} alt="Twitter Clon" />
         </div>
 
 
