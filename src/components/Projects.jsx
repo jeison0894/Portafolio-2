@@ -1,61 +1,30 @@
-import project1 from "../assets/imgs/project1.jpg"
-import project2 from "../assets/imgs/project2.jpg"
+import { useContext } from "react";
+import LanguageContext from "../context/LanguageContext";
 
 const Projects = () => {
-
-  const handleZoomOut = (e) => {
-    const imageZoomOut = e.target.nextElementSibling.firstChild
-    imageZoomOut.classList.add("scale-125")
-  }
-
-  const handleZoomIn = (e) => {
-    const imageZoomIn = e.target.nextElementSibling.firstChild
-    imageZoomIn.classList.remove("scale-125")
-  }
+  const { texts, handleZoomOut, handleZoomIn } = useContext(LanguageContext)
 
   return (
-    <section className="mt-14 mb-24 space-y-8 sm:mt-0">
-
-      <article onMouseEnter={handleZoomOut} onMouseLeave={handleZoomIn} className="flex flex-wrap lg:flex-nowrap cursor-pointer relative ">
-        <div className="w-full h-full absolute  z-40"></div>
-        <div className=" w-full h-full lg:max-w-sm  overflow-hidden">
-          <img className="object-cover ease-out duration-700" src={project2} alt="Sitio web commerce" />
-        </div>
-
-        <div className="w-full flex flex-col justify-between py-5 lg:pb-0 border-gray-500/70 border-b-[0.5px] lg:ml-6 lg:p-4  lg:border-b-[0] lg:border-t-[0.5px]">
-          <div>
-            <h3 className="text-lg font-semibold mb-3 flex justify-between">Ecommerce<span >→</span></h3>
-            <p className="text-gray-300 mb-10">Ecommerce con pasarela de pagos.</p>
+    <section className="mt-14 mb-24 space-y-8 sm:mt-0" >
+      {texts.projects.map(({ imageSRC, title, ariaLabel, description, tags }) =>
+        <article key={title} role="link" tabIndex="0" aria-label={ariaLabel} onMouseEnter={handleZoomOut} onMouseLeave={handleZoomIn} className="flex flex-wrap lg:flex-nowrap cursor-pointer relative ">
+          <div className="w-full h-full absolute z-40 "></div>
+          <div className=" w-full h-full lg:max-w-sm  overflow-hidden">
+            <img className="object-cover ease-out duration-700" src={imageSRC} alt="Sitio web commerce" />
           </div>
 
-          <div className="flex space-x-4 text-sm text-gray-400  ">
-            <p>UX/UI</p>
-            <p>Stripe</p>
-            <p>MongoDB</p>
-            <p>React</p>
+          <div className="w-full flex flex-col justify-between py-5 lg:pb-0 border-gray-500/70 border-b-[0.5px] lg:ml-6 lg:p-4  lg:border-b-[0] lg:border-t-[0.5px]">
+            <div>
+              <h3 className="text-lg font-semibold mb-3 flex justify-between">{title}<span >→</span></h3>
+              <p className="text-gray-300 mb-10">{description}</p>
+            </div>
+
+            <div className="flex space-x-4 text-sm text-gray-400  ">
+              {tags.map(tag => <p key={tag}>{tag}</p>)}
+            </div>
           </div>
-        </div>
-      </article>
-
-       <article onMouseEnter={handleZoomOut} onMouseLeave={handleZoomIn} className="flex flex-wrap lg:flex-nowrap cursor-pointer relative">
-        <div className="w-full h-full absolute z-40"></div>
-        <div className=" w-full h-full lg:max-w-sm  overflow-hidden">
-          <img className="object-cover hover:scale-125 ease-out duration-700" src={project1} alt="Twitter Clon" />
-        </div>
-
-
-        <div className="w-full flex flex-col justify-between py-5 lg:pb-0 border-gray-500/70 border-b-[0.5px] lg:ml-6 lg:p-4  lg:border-b-[0] lg:border-t-[0.5px]">
-          <div>
-            <h3 className="text-lg font-semibold mb-3 flex justify-between">Twitter Clon<span >→</span></h3>
-            <p className="text-gray-300 mb-10">Copia de Twitter con login e información administrada desde una base de datos.</p>
-          </div>
-
-          <div className="flex space-x-4 text-sm text-gray-400  ">
-            <p>React</p>
-            <p>Node</p>
-          </div>
-        </div>
-      </article>
+        </article>
+      )}
     </section>
   );
 };

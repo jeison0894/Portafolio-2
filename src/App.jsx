@@ -1,30 +1,30 @@
 import Header from "./components/Header";
 import Main from "./components/Main";
-import { BrowserRouter as Router, Route, Routes, useLocation } from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes} from "react-router-dom";
 import CopyHome from "./components/CopyHome";
 import Projects from "./components/Projects";
 import About from "./components/About";
 import Footer from "./components/Footer";
 import CursorCicle from "./components/CursorCicle";
-
+import { useContext } from "react";
+import LanguageContext from "./context/LanguageContext";
 
 const App = () => {
-  return (
+  const { texts } = useContext(LanguageContext)
 
+  return (
     <Router>
       <Header />
-      <h1 className="mt-7 mb-14">Diseñador & Desarrollador Frontend</h1>
+      <h1 className="mt-7 mb-14">{texts.headerTitle}</h1>
       <CursorCicle />
-
       <Routes>
         <Route path="/" element={<Main />}>
           <Route path="/" element={<CopyHome />} />
-          <Route path="/proyectos" element={<Projects />} />
-          <Route path="/sobreMi" element={<About />} />
+          <Route path={texts.navMenu[1].route} element={<Projects />} />
+          <Route path={texts.navMenu[2].route} element={<About />} />
         </Route>
       </Routes>
       <Footer />
-
     </Router>
   );
 };
