@@ -6,11 +6,15 @@ import Projects from "./components/Projects";
 import About from "./components/About";
 import Footer from "./components/Footer";
 import CursorCicle from "./components/CursorCicle";
-import { useContext } from "react";
+import { useContext, useEffect } from "react";
 import LanguageContext from "./context/LanguageContext";
 
 const App = () => {
-  const { texts } = useContext(LanguageContext)
+  const { texts, handleLanguage } = useContext(LanguageContext)
+
+  useEffect(() => {
+    handleLanguage(localStorage.getItem('language'))
+  }, [texts])
 
   return (
     <Router>
