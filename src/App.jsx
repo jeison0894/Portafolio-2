@@ -1,13 +1,14 @@
+import { useContext, useEffect } from "react";
+import { BrowserRouter as Router, Route, Routes} from "react-router-dom";
 import Header from "./components/Header";
 import Main from "./components/Main";
-import { BrowserRouter as Router, Route, Routes} from "react-router-dom";
 import CopyHome from "./components/CopyHome";
 import Projects from "./components/Projects";
 import About from "./components/About";
 import Footer from "./components/Footer";
-import CursorCicle from "./components/CursorCicle";
-import { useContext, useEffect } from "react";
+import Error404 from "./components/Error404";
 import LanguageContext from "./context/LanguageContext";
+import CursorCicle from "./components/CursorCicle";
 
 const App = () => {
   const { texts, handleLanguage } = useContext(LanguageContext)
@@ -26,6 +27,7 @@ const App = () => {
           <Route path="/" element={<CopyHome />} />
           <Route path={texts.navMenu[1].route} element={<Projects />} />
           <Route path={texts.navMenu[2].route} element={<About />} />
+          <Route path="*" element={<Error404 />} />
         </Route>
       </Routes>
       <Footer />

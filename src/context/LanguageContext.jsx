@@ -59,6 +59,8 @@ const translations = {
     ],
 
     footerTitle: "Contáctame",
+
+    error404:"Página no encontrada, vuelve al inicio"
   },
 
   en: {
@@ -113,6 +115,8 @@ const translations = {
     ],
 
     footerTitle: "Contact me",
+
+    error404: "Page not found, go back to home"
   },
 
 };
