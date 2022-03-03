@@ -5,6 +5,7 @@ import CopyHome from "./components/CopyHome";
 import Projects from "./components/Projects";
 import About from "./components/About";
 import Footer from "./components/Footer";
+import CursorCicle from "./components/CursorCicle";
 
 
 const App = () => {
@@ -13,6 +14,7 @@ const App = () => {
     <Router>
       <Header />
       <h1 className="mt-7 mb-14">Diseñador & Desarrollador Frontend</h1>
+      <CursorCicle />
 
       <Routes>
         <Route path="/" element={<Main />}>

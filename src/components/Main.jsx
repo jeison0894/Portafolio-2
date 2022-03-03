@@ -9,12 +9,12 @@ const Main = () => {
     <main className="flex flex-col justify-between sm:grid sm:grid-cols-3 h-full sm:h-[60vh]">
 
       <nav>
-        <ul className="space-y-2 font-semibold text-gray-400 ">
+        <ul className="space-y-2 font-semibold ">
           <li>
             <NavLink
               to="/"
               className={({ isActive }) =>
-                isActive ? "text-white" : "text-gray-400 hover:text-gray-500  "
+                isActive ? "text-white" : "text-gray-400 hover:text-gray-500 ease-out duration-100  "
               }
             >
               Inicio
@@ -24,7 +24,7 @@ const Main = () => {
             <NavLink
               to="/proyectos"
               className={({ isActive }) =>
-                isActive ? "text-white " : "text-gray-400 hover:text-gray-500 "
+                isActive ? "text-white " : "text-gray-400 hover:text-gray-500 ease-out duration-100 "
               }
             >
               Proyectos
@@ -34,7 +34,7 @@ const Main = () => {
             <NavLink
               to="/sobreMi"
               className={({ isActive }) =>
-                isActive ? "text-white" : "text-gray-400 hover:text-gray-500  "
+                isActive ? "text-white" : "text-gray-400 hover:text-gray-500 ease-out duration-100  "
               }
             >
               Sobre mi
