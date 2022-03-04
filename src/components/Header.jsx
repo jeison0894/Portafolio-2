@@ -10,7 +10,7 @@ const Header = () => {
   return (
     <>
       <header className="flex justify-between ">
-        <img src={myLogo} alt="Logotipo Jeison Garzón" />
+        <img width="40" height="30" src={myLogo} alt="Logotipo Jeison Garzón" />
         <nav className="space-x-5 ">
 
           {texts.languages.map(({ initial, ariaLabel }) =>

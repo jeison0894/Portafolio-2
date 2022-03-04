@@ -2,18 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 
-
-
 @layer base {
   @font-face {
     font-family: Neue;
+    font-display: swap;
     font-weight: 400;
-      src: url(./assets/fonts/NeueHaasDisplay-Roman.woff2);
+    src: url(./assets/fonts/NeueHaasDisplay-Roman.woff2);
   }
   @font-face {
     font-family: Neue;
+    font-display: swap;
     font-weight: 800;
-     src: url(./assets/fonts/NeueHaasDisplay-Mediu.woff2);
+    src: url(./assets/fonts/NeueHaasDisplay-Mediu.woff2);
   }
 }
 
@@ -26,4 +26,3 @@
   opacity: 1;
   transition: opacity 380ms ease-in;
 }
-
