@@ -1,26 +1,19 @@
 import { useContext } from "react";
 import LanguageContext from "../context/LanguageContext";
+import profilePhoto from "../assets/imgs/personalPhoto.jpg"
 
 const About = () => {
   const { texts } = useContext(LanguageContext)
 
   return (
-    <section className="sm:relative sm:h-full mb-24 mt-28 md:mt-0">
-      <div className="sm:relative sm:h-3/6">
-        <nav className="flex justify-end my-8 mb-12 sm:absolute sm:bottom-0">
-          <ul className="space-y-1  ">
-            {texts.personalLinks.map(({ socialNetwork, url, ariaLabel }) =>
-              <li key={socialNetwork}>
-                <a href={url} aria-label={ariaLabel} target="_blank" rel="noreferrer"
-                  className="underlineBottom text-lg md:text-base">{socialNetwork} &nbsp; ↗</a>
-              </li>
-            )}
-          </ul>
-        </nav>
+    <section className="sm:h-full mb-24 mt-28 md:mt-0 flex flex-col max-w-[760px] ml-auto ">
+
+      <div className=" h-1/2 flex flex-col justify-end">
+        <img className="mb-7 md:w-64" src={profilePhoto} alt="foto" />
       </div>
 
       <div className="md:flex md:justify-end" >
-        <div className=" md:max-w-[379px] space-y-6 font-semibold text-gray-200">
+        <div className="lg:max-w-[379px] space-y-6 font-semibold text-gray-200">
           {texts.myInfo.map((paragraph) =>
             <p key={paragraph}>{paragraph}</p>
           )}
@@ -31,5 +24,4 @@ const About = () => {
 };
 
 export default About;
-
 

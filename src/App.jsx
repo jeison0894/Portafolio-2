@@ -9,6 +9,7 @@ import Footer from "./components/Footer";
 import Error404 from "./components/Error404";
 import LanguageContext from "./context/LanguageContext";
 import CursorCicle from "./components/CursorCicle";
+import Contact from "./components/Contact";
 
 const App = () => {
   const { texts, handleLanguage } = useContext(LanguageContext)
@@ -27,10 +28,11 @@ const App = () => {
           <Route path="/" element={<CopyHome />} />
           <Route path={texts.navMenu[1].route} element={<Projects />} />
           <Route path={texts.navMenu[2].route} element={<About />} />
+          <Route path={texts.navMenu[3].route} element={<Contact />} />
           <Route path="*" element={<Error404 />} />
         </Route>
       </Routes>
-      <Footer />
+     {/*  <Footer /> */}
     </Router>
   );
 };

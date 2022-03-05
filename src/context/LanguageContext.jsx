@@ -27,6 +27,9 @@ const translations = {
     }, {
       name: "Sobre mi",
       route: "/sobreMi",
+    }, {
+      name: "Contacto",
+      route: "/contacto",
     }],
     headerSubtitle:
       "Diseño y desarrollo soluciones digitales y sitios web 100% rápidos, accesibles, visualmente estéticos y funcionales, con excelente usabilidad y optimización SEO.",
