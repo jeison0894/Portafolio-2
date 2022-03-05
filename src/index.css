@@ -17,8 +17,6 @@
   }
 }
 
-// Transition between views change.
-
 .fade-enter {
   opacity: 0;
   z-index: 1;
@@ -28,8 +26,6 @@
   opacity: 1;
   transition: opacity 380ms ease-in;
 }
-
-// Hover animation images view projects.
 
 .Underline {
   position: relative;
