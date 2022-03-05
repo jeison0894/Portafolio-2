@@ -9,12 +9,12 @@ const Header = () => {
 
   return (
     <>
-      <header className="flex justify-between ">
-        <img width="40" height="30" src={myLogo} alt="Logotipo Jeison Garzón" />
+      <header className="flex justify-between items-center ">
+        <img width="54.67" height="32.8" src={myLogo} alt="Logotipo Jeison Garzón" />
         <nav className="space-x-5 ">
 
           {texts.languages.map(({ initial, ariaLabel }) =>
-            <NavLink key={initial} to="/" onClick={() => handleLanguage(initial)} className="font-semibold hover:text-gray-400" aria-label={ariaLabel}>{initial.toUpperCase()}</NavLink>
+            <NavLink key={initial} to="/" onClick={() => handleLanguage(initial)} className="link font-semibold" aria-label={ariaLabel}>{initial.toUpperCase()}</NavLink>
           )}
         </nav>
       </header>

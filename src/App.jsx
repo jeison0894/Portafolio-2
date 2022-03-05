@@ -20,7 +20,7 @@ const App = () => {
   return (
     <Router>
       <Header />
-      <h1 className="mt-7 mb-14">{texts.headerTitle}</h1>
+      <h1 className="mt-6 mb-14">{texts.headerTitle}</h1>
       <CursorCicle />
       <Routes>
         <Route path="/" element={<Main />}>

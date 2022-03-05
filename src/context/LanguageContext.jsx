@@ -17,7 +17,7 @@ const translations = {
       ariaLabel: "cambiar idioma a Ingles"
     }],
     //Home & NavMenu
-    headerTitle: "Diseñador & Desarrollador Frontend",
+    headerTitle: "Diseñador UX/UI & Desarrollador Frontend",
     navMenu: [{
       name: "Inicio",
       route: "/",
@@ -54,13 +54,13 @@ const translations = {
     ],
     myInfo: [
       "Desarrollador autodidacta, estudie diseño grafico en la universidad durante 5 años y trabaje como diseñador Freelancer por 3 años antes de hacer el cambio. Esta experiencia me permitió ser más sensible a los detalles visuales, la animación y la tipografía.",
-      "Mi objetivo, crear experiencias visuales que atraigan y comuniquen efectivamente ayudando a resolver una necesidad.",
-      "Me especializo en el stack MERN.",
+      "Mi objetivo, combinar tecnologías modernas con la estética visual para crear productos que comuniquen efectivamente y ayuden a resolver una necesidad.",
+      "Me especializo en el stack MERN y GIT.",
     ],
 
     footerTitle: "Contáctame",
 
-    error404:"Página no encontrada, vuelve al inicio"
+    error404: "Página no encontrada, vuelve al inicio"
   },
 
   en: {
@@ -73,7 +73,7 @@ const translations = {
       ariaLabel: "Change language to English"
     }],
     //Home & NavMenu
-    headerTitle: "Designer & Frontend Developer",
+    headerTitle: "UX/UI Designer & Frontend Developer",
     navMenu: [{
       name: "Home",
       route: "/",
@@ -110,8 +110,8 @@ const translations = {
     ],
     myInfo: [
       "Autodidact developer, I studied graphic design at university for 5 years and worked as a freelance designer for 3 years before making the switch. This experience allowed me to be more sensitive to visual details, animation and typography.",
-      "My goal, to create visual experiences that attract and communicate effectively, helping to solve a need.",
-      "I specialize in the MERN stack.",
+      "My goal, to combine modern technologies with visual aesthetics to create products that effectively communicate and help solve a need.",
+      "I specialize in the MERN stack and GIT.",
     ],
 
     footerTitle: "Contact me",
