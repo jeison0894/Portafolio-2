@@ -5,7 +5,7 @@ const Projects = () => {
   const { texts, handleZoomOut, handleZoomIn } = useContext(LanguageContext)
 
   return (
-    <section className="mt-14 mb-24 space-y-8 sm:mt-0" >
+    <section className="mt-24 mb-24 space-y-8 sm:mt-0" >
       {texts.projects.map(({ imageSRC, title, ariaLabel, description, tags }, index) =>
         <article key={title} role="link" tabIndex="0" aria-label={ariaLabel} onMouseEnter={handleZoomOut} onMouseLeave={handleZoomIn} className="underlineTop flex flex-wrap lg:flex-nowrap cursor-pointer relative ">
           <div className="w-full h-full absolute z-40 "></div>
