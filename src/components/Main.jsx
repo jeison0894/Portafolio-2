@@ -9,18 +9,15 @@ const Main = () => {
 
   return (
     <main className="flex flex-col justify-between sm:grid sm:grid-cols-3 h-full sm:h-[60vh]">
-      <nav>
-        <ul className="space-y-2 font-semibold ">
-          {texts.navMenu.map(({ name, route }) =>
-            <li key={name}>
-              <NavLink
-                to={route}            
-                className={({ isActive }) => isActive ? "text-white" : "text-gray-400 hover:text-gray-500 ease-out duration-100"}>
-                {name}
-              </NavLink>
-            </li>
-          )}
-        </ul>
+      <nav className="space-y-3 font-semibold flex flex-col">
+        {texts.navMenu.map(({ name, route }) =>
+          <NavLink
+            key={name}
+            to={route}
+            className={({ isActive }) => isActive ? "text-white/90" : "text-gray-400 hover:text-white/90 ease-out duration-700"}>
+            {name}
+          </NavLink>
+        )}
       </nav>
 
       <TransitionGroup component={null} enter={true} exit={false}>

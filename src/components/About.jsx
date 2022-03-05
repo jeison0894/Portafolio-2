@@ -11,7 +11,8 @@ const About = () => {
           <ul className="space-y-1  ">
             {texts.personalLinks.map(({ socialNetwork, url, ariaLabel }) =>
               <li key={socialNetwork}>
-                <a href={url} aria-label={ariaLabel} target="_blank" rel="noreferrer" className="hover:text-gray-400 ease-out duration-100">{socialNetwork} &nbsp; ↗</a>
+                <a href={url} aria-label={ariaLabel} target="_blank" rel="noreferrer"
+                  className="underlineBottom">{socialNetwork} &nbsp; ↗</a>
               </li>
             )}
           </ul>
