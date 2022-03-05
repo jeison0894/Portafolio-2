@@ -11,14 +11,13 @@ const Header = () => {
     <>
       <header className="flex justify-between items-center ">
         <img width="54.67" height="32.8" src={myLogo} alt="Logotipo Jeison Garzón" />
-        <nav className="space-x-5 ">
+        <nav className="space-x-5">
 
           {texts.languages.map(({ initial, ariaLabel }) =>
            <LanguageLink key={initial} initial={initial} ariaLabel={ariaLabel} />
           )}
         </nav>
       </header>
-
     </>
   );
 };
