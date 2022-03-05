@@ -1,11 +1,11 @@
 import { useContext } from "react";
 import myLogo from "../assets/imgs/JeisonGarzónLogotipo.svg";
 import LanguageContext from "../context/LanguageContext";
-import { NavLink } from "react-router-dom";
+import LanguageLink from "./LanguageLink";
 
 const Header = () => {
 
-  const { texts, handleLanguage } = useContext(LanguageContext)
+  const { texts } = useContext(LanguageContext)
 
   return (
     <>
@@ -14,7 +14,7 @@ const Header = () => {
         <nav className="space-x-5 ">
 
           {texts.languages.map(({ initial, ariaLabel }) =>
-            <NavLink key={initial} to="/" onClick={() => handleLanguage(initial)} className="link font-semibold" aria-label={ariaLabel}>{initial.toUpperCase()}</NavLink>
+           <LanguageLink key={initial} initial={initial} ariaLabel={ariaLabel} />
           )}
         </nav>
       </header>

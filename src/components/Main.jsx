@@ -17,7 +17,6 @@ const Main = () => {
                 to={route}            
                 className={({ isActive }) => isActive ? "text-white" : "text-gray-400 hover:text-gray-500 ease-out duration-100"}>
                 {name}
-                
               </NavLink>
             </li>
           )}
