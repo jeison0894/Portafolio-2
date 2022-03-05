@@ -17,6 +17,8 @@
   }
 }
 
+// Transition between views change.
+
 .fade-enter {
   opacity: 0;
   z-index: 1;
@@ -27,3 +29,27 @@
   transition: opacity 380ms ease-in;
 }
 
+// Hover animation images view projects.
+
+.Underline {
+  position: relative;
+}
+
+.Underline::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 0;
+  height: 1px;
+  background-color: white;
+  transition: width 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .Underline:hover::before {
+    left: 0;
+    right: auto;
+    width: 100%;
+  }
+}
