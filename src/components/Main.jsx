@@ -8,8 +8,8 @@ const Main = () => {
   const { texts } = useContext(LanguageContext)
 
   return (
-    <main className="flex flex-col justify-between sm:grid sm:grid-cols-3 h-full sm:h-[60vh] ">
-      <nav className="space-x-5 font-semibold flex sm:space-x-0 sm:flex-col sm:space-y-3 pb-4 border-gray-500/70 border-b-[0.5px] sm:border-b-[0]">
+    <main className="flex flex-col justify-between sm:grid sm:grid-cols-3">
+      <nav className="flex flex-wrap n space-x-5 font-semibold sm:space-x-0 sm:flex-col sm:space-y-3 pb-4 border-gray-500/70 border-b-[0.5px] sm:border-b-[0]">
         {texts.navMenu.map(({ name, route }) =>
           <NavLink
             key={name}
