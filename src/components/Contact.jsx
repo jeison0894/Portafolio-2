@@ -1,4 +1,4 @@
-import { useContext } from "react/cjs/react.development"
+import { useContext } from "react"
 import LanguageContext from "../context/LanguageContext"
 
 const Contact = () => {
