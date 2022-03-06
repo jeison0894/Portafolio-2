@@ -58,11 +58,16 @@ const translations = {
     myInfo: [
       "Desarrollador autodidacta, estudie diseño grafico en la universidad durante 5 años y trabaje como diseñador Freelancer por 3 años antes de hacer el cambio. Esta experiencia me permitió ser más sensible a los detalles visuales, la animación y la tipografía.",
       "Mi objetivo, combinar tecnologías modernas con la estética visual para crear productos que comuniquen efectivamente y ayuden a resolver una necesidad.",
-      "Me especializo en el stack MERN y GIT.",
+      "Me especializo en Figma, el stack MERN y GIT..",
     ],
 
-    footerTitle: "Contáctame",
+    //Contact
+    ctaTitle: "Enviame un correo",
+    ariaLabel: "Enviar correo a Jeison Garzón",
+    downloadCVTitle: "DESCARGAR CV",
+    copyright: " JeisonGarzón  -  Todos los derechos reservados",
 
+    //Error 404
     error404: "Página no encontrada, vuelve al inicio"
   },
 
@@ -86,6 +91,9 @@ const translations = {
     }, {
       name: "About me",
       route: "/aboutMe",
+    }, {
+      name: "Contact",
+      route: "/contact",
     }],
     headerSubtitle:
       "Design and development digital solutions and websites that are 100% fast, accessible, visually aesthetic and functional, with excellent usability and SEO optimization.",
@@ -114,11 +122,16 @@ const translations = {
     myInfo: [
       "Autodidact developer, I studied graphic design at university for 5 years and worked as a freelance designer for 3 years before making the switch. This experience allowed me to be more sensitive to visual details, animation and typography.",
       "My goal, to combine modern technologies with visual aesthetics to create products that effectively communicate and help solve a need.",
-      "I specialize in the MERN stack and GIT.",
+      "I specialize in Figma, the MERN stack and GIT.",
     ],
 
-    footerTitle: "Contact me",
+    //Contact
+    ctaTitle: "Send me an email",
+    ariaLabel: "Send Email to Jeison Garzón",
+    downloadCVTitle: "DOWNLOAD CV",
+    copyright: "Jeison Garzon - All rights reserved",
 
+    //Error 404
     error404: "Page not found, go back to home"
   },
 
