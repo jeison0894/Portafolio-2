@@ -6,7 +6,7 @@ const About = () => {
   const { texts } = useContext(LanguageContext)
 
   return (
-   <section className="flex flex-col max-w-[720px] ml-auto mt-24 mb-16 md:mt-[26vh] lg:mt-[12vh]">
+    <section className="mt-24 mb-16 ml-auto flex flex-col max-w-[720px] md:mt-[16vh] lg:mt-[12vh]">
 
   <img className="mb-7 md:w-64" src={profilePhoto} alt="foto " />
 
@@ -22,6 +22,3 @@ const About = () => {
 };
 
 export default About;
-
-
-{/*  */}
