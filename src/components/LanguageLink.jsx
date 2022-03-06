@@ -7,7 +7,7 @@ const LanguageLink = ({ initial, ariaLabel }) => {
 
   return (
     <NavLink to="/" onClick={() => handleLanguage(initial)}
-      className={`hover:text-white ease-out duration-300 font-semibold text-gray-400 ${initial === localStorage.getItem('language') && "text-white/100"}`}
+      className={`hover:text-white  ease-out duration-300 font-semibold text-gray-400 ${initial === localStorage.getItem('language') && "text-white/100 dark:text-black"}`}
       aria-label={ariaLabel}>{initial.toUpperCase()}</NavLink>
   )
 }

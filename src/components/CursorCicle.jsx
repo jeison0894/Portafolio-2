@@ -26,38 +26,38 @@ const CursorCicle = () => {
       ySet(pos.y);
     });
 
-  /*   const links = document.querySelectorAll(".linkCircle")
-    console.log(links);
-
-    function linkAnimIn() {
-      gsap.to(ball.current, {
-        duration: 0.3,
-        scale: 2.5
-      })
-      ball.current.classList.add("border-[1.5px]")
-    }
-
-    function linkAnimOut() {
-      gsap.to(ball.current, {
-        duration: 0.3,
-        scale: 1
-      })
-    }
-
-    links.forEach(link => {
-      link.addEventListener('mouseover', e => {
-        linkAnimIn();
-      });
-
-      link.addEventListener('mouseout', e => {
-        linkAnimOut();
-      })
-    }) */
+    /*   const links = document.querySelectorAll(".linkCircle")
+      console.log(links);
+  
+      function linkAnimIn() {
+        gsap.to(ball.current, {
+          duration: 0.3,
+          scale: 2.5
+        })
+        ball.current.classList.add("border-[1.5px]")
+      }
+  
+      function linkAnimOut() {
+        gsap.to(ball.current, {
+          duration: 0.3,
+          scale: 1
+        })
+      }
+  
+      links.forEach(link => {
+        link.addEventListener('mouseover', e => {
+          linkAnimIn();
+        });
+  
+        link.addEventListener('mouseout', e => {
+          linkAnimOut();
+        })
+      }) */
 
   }, [ball])
 
   return (
-    <div ref={ball} className=" w-3 h-3 fixed top-0 left-0 md:bg-white  rounded-full pointer-events-none"></div>
+    <div ref={ball} className=" w-3 h-3 fixed top-0 left-0 md:bg-white  rounded-full pointer-events-none dark:bg-black"></div>
   )
 }
 

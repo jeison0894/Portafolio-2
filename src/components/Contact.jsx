@@ -15,7 +15,7 @@ const Contact = () => {
         </div>
       </div>
 
-      <a className="font-bold text-gray-200" href="#">{texts.downloadCVTitle}</a>
+      <a className="font-bold " href="#">{texts.downloadCVTitle}</a>
 
       <div className="space-y-3">
         <div>

@@ -14,7 +14,7 @@ const Main = () => {
           <NavLink
             key={name}
             to={route}
-            className={({ isActive }) => isActive ? "text-white/90" : `text-gray-400 hover:text-white/90 ease-out duration-700 ${name === "contacto" && "self-end"}`}>
+            className={({ isActive }) => isActive ? "" : `text-gray-400 hover:text-white/90 ease-out duration-700 dark:hover:text-slate-800 ${name === "contacto" && "self-end"}`}>
             {name}
           </NavLink>
         )}

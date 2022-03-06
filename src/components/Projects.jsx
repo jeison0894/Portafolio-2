@@ -15,11 +15,11 @@ const Projects = () => {
 
           <div className="w-full flex flex-col justify-between py-5 lg:pb-0 border-gray-500/70 border-b-[0.5px] lg:ml-6 lg:p-4  lg:border-b-[0] lg:border-t-[0.5px]">
             <div>
-              <h3 className="text-lg font-semibold mb-3 flex justify-between text-white/90">{title}<span className="text-xs text-gray-400">0{index + 1}</span></h3>
-              <p className="text-gray-300 mb-10 ">{description}</p>
+              <h3 className="text-xl font-semibold mb-4 flex justify-between dark:text-stone-800">{title}<span className="text-xs">0{index + 1}</span></h3>
+              <p className=" dark:text-stone-600 mb-10 ">{description}</p>
             </div>
 
-            <div className="flex space-x-4 text-sm text-gray-400  ">
+            <div className="flex space-x-4 text-sm text-white/60 dark:text-stone-600  ">
               {tags.map(tag => <p key={tag}>{tag}</p>)}
             </div>
           </div>
