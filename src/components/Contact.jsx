@@ -15,9 +15,9 @@ const Contact = () => {
         </div>
       </div>
 
-      <div className="flex justify-between self-end space-x-3">
+      <div className="flex justify-center md:justify-between md:self-end space-x-3">
         <a className="font-bold  underlineBottom" href="#">{texts.downloadCVTitle} </a>
-        <span>{<DownloadIcon />}</span>
+        {<DownloadIcon />}
       </div>
 
 
