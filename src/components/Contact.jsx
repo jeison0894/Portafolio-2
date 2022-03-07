@@ -1,6 +1,8 @@
 import { useContext } from "react"
 import LanguageContext from "../context/LanguageContext"
 import DownloadIcon from "../assets/imgs/DownloadIcon.jsx"
+import pdfEspañol from "../assets/pdfs/CV-español.pdf"
+import pdfEnglish from "../assets/pdfs/CV-English.pdf"
 
 const Contact = () => {
   const { texts } = useContext(LanguageContext)
@@ -16,7 +18,7 @@ const Contact = () => {
       </div>
 
       <div className="flex justify-center md:justify-between md:self-end space-x-3">
-        <a className="font-bold  underlineBottom" href="#">{texts.downloadCVTitle} </a>
+        <a className="font-bold  underlineBottom" href={localStorage.getItem("language") === "es" ? pdfEspañol : pdfEnglish} target="_blank">{texts.downloadCVTitle} </a>
         {<DownloadIcon />}
       </div>
 
