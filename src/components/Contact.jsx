@@ -1,10 +1,10 @@
 import { useContext } from "react"
 import LanguageContext from "../context/LanguageContext"
+import DownloadIcon from "../assets/imgs/DownloadIcon.jsx"
 
 const Contact = () => {
   const { texts } = useContext(LanguageContext)
 
-  console.log(texts.personalLinks)
   return (
     <section className="mt-24 absolute top-52 left-0 right-0 bottom-10 flex flex-col justify-between text-center  md:right-7 md:text-right md:max-h-[350px] md:top-64">
 
@@ -15,13 +15,17 @@ const Contact = () => {
         </div>
       </div>
 
-      <a className="font-bold " href="#">{texts.downloadCVTitle}</a>
+      <div className="flex justify-between self-end space-x-3">
+        <a className="font-bold  underlineBottom" href="#">{texts.downloadCVTitle} </a>
+        <span>{<DownloadIcon />}</span>
+      </div>
+
 
       <div className="space-y-3">
         <div>
           <nav className="space-x-5">
             {texts.personalLinks.map(({ socialNetwork, url, ariaLabel }) =>
-              <a target="_blank" rel="noopener noreferrer" className="font-bold" key={socialNetwork} href={url} aria-label={ariaLabel}>{socialNetwork}</a>
+              <a target="_blank" rel="noopener noreferrer" className="underlineBottom font-bold" key={socialNetwork} href={url} aria-label={ariaLabel}>{socialNetwork}</a>
             )}
           </nav>
 

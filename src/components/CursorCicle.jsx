@@ -57,7 +57,7 @@ const CursorCicle = () => {
   }, [ball])
 
   return (
-    <div ref={ball} className=" w-3 h-3 fixed top-0 left-0 md:bg-white  rounded-full pointer-events-none dark:bg-black"></div>
+    <div ref={ball} className=" w-3 h-3 fixed top-0 left-0 border-2 md:border-gray-400  rounded-full pointer-events-none"></div>
   )
 }
 

@@ -13,16 +13,16 @@ import DarkModeContext from "./context/DarkModeContext";
 
 const App = () => {
   const { texts, handleLanguage } = useContext(LanguageContext)
-  const { setLogoColor } = useContext(DarkModeContext)
+  const { changeColorIconDarkMode, changeHoverLines } = useContext(DarkModeContext)
 
   useEffect(() => {
     handleLanguage(localStorage.getItem('language'))
 
-    if (localStorage.getItem("theme") === "dark") {
-      document.documentElement.classList.add("dark")
-      setLogoColor("black")
-    }
-  }, [texts])
+    changeColorIconDarkMode()
+
+    changeHoverLines()
+
+  }, [texts, localStorage.getItem("theme")])
 
   return (
     <Router>
