@@ -58,7 +58,7 @@ const translations = {
     myInfo: [
       "Desarrollador autodidacta, estudie diseño grafico en la universidad durante 5 años y trabaje como diseñador Freelancer por 3 años antes de hacer el cambio. Esta experiencia me permitió ser más sensible a los detalles visuales, la animación y la tipografía.",
       "Mi objetivo, combinar tecnologías modernas con la estética visual para crear productos que comuniquen efectivamente y ayuden a resolver una necesidad.",
-      "Me especializo en Figma, el stack MERN y GIT..",
+      "Me especializo en Figma, el stack MERN y GIT.",
     ],
 
     //Contact

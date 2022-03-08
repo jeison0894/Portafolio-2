@@ -10,6 +10,7 @@ import LanguageContext from "./context/LanguageContext";
 import CursorCicle from "./components/CursorCicle";
 import Contact from "./components/Contact";
 import DarkModeContext from "./context/DarkModeContext";
+import Loader from "./components/Loader";
 
 const App = () => {
   const { texts, handleLanguage } = useContext(LanguageContext)
@@ -26,6 +27,7 @@ const App = () => {
 
   return (
     <Router>
+      <Loader />
       <Header />
       <h1 className="mt-6 mb-14">{texts.headerTitle}</h1>
       <CursorCicle />
