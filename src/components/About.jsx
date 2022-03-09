@@ -7,7 +7,7 @@ const About = () => {
 
   return (
     <section className="mt-24 mb-16 ml-auto flex flex-col max-w-[720px] md:mt-[16vh] lg:mt-[12vh]">
-      <img className="mb-7 md:w-64" src={profilePhoto} alt="foto " />
+      <img width="277" height="278" className="mb-7 md:w-64" src={profilePhoto} alt="foto " />
 
       <div className="md:flex md:justify-end" >
         <div className="lg:max-w-[379px] space-y-6 font-semibold">
