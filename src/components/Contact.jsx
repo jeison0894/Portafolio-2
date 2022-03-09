@@ -1,8 +1,8 @@
 import { useContext } from "react"
 import LanguageContext from "../context/LanguageContext"
 import DownloadIcon from "../assets/imgs/DownloadIcon.jsx"
-import pdfEspañol from "../assets/pdfs/CV-español.pdf"
-import pdfEnglish from "../assets/pdfs/CV-English.pdf"
+import pdfEspañol from "../assets/pdfs/JeisonGarzón_CV_Español.pdf"
+import pdfEnglish from "../assets/pdfs/JeisonGarzón_CV_English.pdf"
 
 const Contact = () => {
   const { texts } = useContext(LanguageContext)
