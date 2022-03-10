@@ -40,7 +40,7 @@ const translations = {
       ariaLabel: "Ir al proyecto Ecommerce ",
       title: "Ecommerce",
       description: "Ecommerce con pasarela de pagos.",
-      tags: ["UX/UI", "Stripe", "MongoDB", "React"]
+      tags: ["UX/UI", "Stripe", "MongoDB", "React", "Auth0"]
     }, {
       imageSRC: project1,
       ariaLabel: "Ir al proyecto Twitter Clon ",
@@ -104,7 +104,7 @@ const translations = {
       ariaLabel: "Go to project Ecommerce ",
       title: "Ecommerce",
       description: "Ecommerce with payment gateway.",
-      tags: ["UX/UI", "Stripe", "MongoDB", "React"]
+      tags: ["UX/UI", "Stripe", "MongoDB", "React", "Auth0"]
     }, {
       imageSRC: project1,
       ariaLabel: "Go to project Twitter Clone ",
